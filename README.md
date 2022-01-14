@@ -37,24 +37,23 @@ Write your javascript code in `js/index.js`. When submitting, submit the whole r
 
 Create the functions in `js/index.js` to calculate:
 
-    - area of a square
-    - area of a triangle
-    - area of a circle 
+- area of a square
+- area of a triangle
+- area of a circle 
 
 Create the functions in `js/index.js ` to calculate:
-    
-    - perimeter of a square
-    - perimeter of a triangle
-    - perimeter of a circle
+- perimeter of a square
+- perimeter of a triangle
+- perimeter of a circle
 
 ### Iteration 2: 
 Test your functions
 
 ### Iteration 3:
 Create forms or components to capturate data.
-    - Form to square
-    - Form to triangle
-    - Form to circle
+- Form to square
+- Form to triangle
+- Form to circle
 ### Iterate 4: 
 Integrate your js with your HTML
 
