@@ -10,10 +10,11 @@ Let's create a calculator, where the users will be able to create some magic ope
 
 ## Branches
 You will find some branches
-- main : You will find the code base of the proyect
-- final : You will find the final code 
-- react : You will find the code for react framework
-- vuejs :  You will find the code for vuejs framework 
+
+    - main : You will find the code base of the proyect
+    - final : You will find the final code 
+    - react : You will find the code for react framework
+    - vuejs :  You will find the code for vuejs framework 
 ## Requeriments
 - Fork this repo
 
@@ -35,11 +36,13 @@ Write your javascript code in `js/index.js`. When submitting, submit the whole r
 ### Iteration 1: 
 
 Create the functions in `js/index.js` to calculate:
+
     - area of a square
     - area of a triangle
     - area of a circle 
 
 Create the functions in `js/index.js ` to calculate:
+    
     - perimeter of a square
     - perimeter of a triangle
     - perimeter of a circle
