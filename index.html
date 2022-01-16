@@ -24,7 +24,7 @@
               <div class="columns">
                   <div class="column">
                       Square
-                      <form action="#">
+                      <form action="#" id="formSquare">
                           <div class="field">
                               <label for="side" class="label">Side</label>
                               <div class="control">
@@ -33,26 +33,30 @@
                           </div>
                           <div class="control">
                               <label class="radio">
-                                  <input type="radio" name="areaSquare">
+                                  <input type="radio" name="squareOperation" value="area">
                                   area
                               </label>
                               <label class="radio">
-                                  <input type="radio" name="perimeterSquare">
+                                  <input type="radio" name="squareOperation" value="perimeter">
                                   perimeter
                               </label>
                           </div><!-- control -->
                           <div class="control">
-                              <button  type="" class="button is-primary">Calculate</button>
-
+                              <button  type="submit" class="button is-primary">Calculate</button>
                           </div>
-
                       </form>
+                      <div class="field">
+                          <label for="resultSquare" class="label">Result</label>
+                          <div class="control">
+                              <input id="resultSquare" class="input" type="number" disabled/>
+                          </div>
+                      </div>
                   </div>
                   <div class="column">
                       Triangle
                       <div class="card">
                           <div class="card-content">
-                              <form action="#">
+                              <form action="#" id="formTriangle">
                                   <div class="field">
                                       <label for="base" class="label">Base</label>
                                       <div class="control">
@@ -65,7 +69,32 @@
                                           <input id="height" class="input" type="number" placeholder="0"/>
                                       </div>
                                   </div>
+                                  <div class="field">
+                                      <label for="sideTriangle" class="label">side</label>
+                                      <div class="control">
+                                          <input id="sideTriangle" class="input" type="number" placeholder="0"/>
+                                      </div>
+                                  </div>
+                                  <div class="control">
+                                      <label class="radio">
+                                          <input type="radio" name="triangleOperation" value="area">
+                                          area
+                                      </label>
+                                      <label class="radio">
+                                          <input type="radio" name="triangleOperation" value="perimeter">
+                                          perimeter
+                                      </label>
+                                  </div><!-- control -->
+                                  <div class="control">
+                                      <button  type="submit" class="button is-primary">Calculate</button>
+                                  </div>
                               </form><!--form-->
+                              <div class="field">
+                                  <label for="resultTriangle" class="label">Result</label>
+                                  <div class="control">
+                                      <input id="resultTriangle" class="input" type="number" disabled/>
+                                  </div>
+                              </div>
                           </div><!--card-content-->
                       </div><!--card-->
                   </div><!--column-->
@@ -77,19 +106,39 @@
             <div class="columns">
                 <div class="column">
                     Circle
-                    <form action="#">
+                    <form action="#" id="formCircle">
                         <div class="field">
                             <label for="radius" class="label">Radios</label>
                             <div class="control">
                                 <input id="radius" class="input" type="number" placeholder="0"/>
                             </div>
                         </div>
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="circleOperation" value="area">
+                                area
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="circleOperation" value="perimeter">
+                                perimeter
+                            </label>
+                        </div><!-- control -->
+                        <div class="control">
+                            <button  type="submit" class="button is-primary">Calculate</button>
+                        </div>
                     </form>
+                    <div class="field">
+                        <label for="resultCircle" class="label">Result</label>
+                        <div class="control">
+                            <input id="resultCircle" class="input" type="number" disabled/>
+                        </div>
+                    </div>
                 </div>
 
             </div><!--columns-->
         </div><!--container-->
     </section><!--section-->
       <!-- Attach the your js file  -->
+    <script src="./js/index.js"></script>
 </body>
 </html>l
