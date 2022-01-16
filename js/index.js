@@ -19,3 +19,10 @@ const perimeterCircle = (radius) =>{
     return 2 * Math.PI * radius
 }//perimeterCircle
 
+console.log(areaSquare(2));
+console.log(areaTriangle(12,24));
+console.log(areaCircle(6));
+
+console.log(perimeterSquare(6));
+console.log(perimeterTriangle(4));
+console.log(perimeterCircle(12));
