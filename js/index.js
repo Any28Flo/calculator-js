@@ -23,7 +23,8 @@ const squareOperations =() =>{
     let sideInput =   parseInt(document.getElementById("side").value);
     let radioButtons = document.getElementsByName("squareOperation");
     let resultSquare = document.getElementById("resultSquare");
-
+    //TODO
+    //Create a function to only return area or perimeter
     for(let i = 0 ; i< radioButtons.length ; i++){
         if(radioButtons[i].checked){
             switch (radioButtons[i].value){

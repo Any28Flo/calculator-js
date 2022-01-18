@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcula Descuentos</title>
+    <!-- You could change the CSS framework  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+
+            <div class="column">
+                <h1>Calcula descuento</h1>
+                <form action="#" id="calculateDiscount">
+                    <div class="field">
+                        <label for="price" class="label">Price</label>
+                        <div class="control">
+                            <input id="price" class="input" type="number" placeholder="0"/>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="discount" class="label">Discount</label>
+                        <div class="control">
+                            <input id="discount" class="input" type="number" placeholder="0"/>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button  type="submit" class="button is-primary">Calculate discount</button>
+                    </div>
+                </form>
+                <div class="field">
+                    <label for="discountResult" class="label">Result</label>
+                    <div class="control">
+                        <input id="discountResult" class="input" type="number" disabled/>
+                    </div>
+                </div>
+
+            </div><!--column-->
+            <div class="column">
+                <h1>Calcula descuento con cupon</h1>
+                <form action="#" id="formDiscountWithCupon">
+                    <div class="field">
+                        <label for="priceInput" class="label">Price</label>
+                        <div class="control">
+                            <input id="priceInput" class="input" type="number" placeholder="0"/>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="cuponName" class="label">Cupon name:</label>
+                        <div class="control">
+                            <input id="cuponName" class="input" type="text" placeholder="cupon name"/>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button  type="submit" class="button is-primary">Calculate discount</button>
+                    </div>
+                </form>
+                <div class="field">
+                    <label for="discountResult" class="label">Result</label>
+                    <div class="control">
+                        <input id="discountResultWithCupon" class="input" type="number" disabled/>
+                    </div>
+                </div>
+
+                <div id="notification" class="notification is-danger">
+                    <button class="delete"></button>
+                    Cupon no válido
+                </div>
+            </div><!--column-->
+        </div><!--columns-->
+    </div><!--container-->
+
+</section>
+<script src="./js/descuentos.js"></script>
+</body>
+</html>
