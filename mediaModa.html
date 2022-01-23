@@ -20,21 +20,37 @@
                         <div class="field">
                             <label for="price" class="label">Price</label>
                             <div class="control">
-                                <input id="price" class="input" type="number" placeholder="0"/>
+                                <input id="price" class="input inputMedia" type="number" placeholder="0"/>
                             </div>
                         </div>
                     </div>
 
-                    <div class="field">
-                        <button class="button is-primary is-light" id="addItem">
+
+                    <div class="control">
+                        <button  type="submit" class="button is-primary">Calculate</button>
+                    </div>
+                </form><!--form-->
+                <div class="field">
+                    <button class="button is-primary is-light" id="addItem">
                               <span class="icon has-text-info">
                                     <i class="fas fa-plus-circle"></i>
                               </span>
-                              <span>Add Item</span>
-                        </button><!--button-->
+                            <span>Add Item</span>
+                    </button><!--button-->
 
+                </div>
+                <div class="field">
+                    <label for="mediaResult" class="label">Media</label>
+                    <div class="control">
+                        <input id="mediaResult" class="input" type="number" disabled/>
                     </div>
-                </form><!--form-->
+                </div>
+                <div class="field">
+                    <label for="medianaResult" class="label">Mediana</label>
+                    <div class="control">
+                        <input id="medianaResult" class="input" type="text" disabled/>
+                    </div>
+                </div>
             </div><!--column-->
         </div><!--    columns-->
     </div><!--container-->
