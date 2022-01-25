@@ -27,28 +27,51 @@ const isEven = array =>{
     return array.length % 2 === 0 ?  true :  false;
 
 }//isEven
+const calculateModa = array => {
+    let counter = {};
+    const arrayOrder_1 =  arrayOrder(array);
+    arrayOrder_1.map(element =>{
+        if(counter[element]){
+            counter[element] += 1
+        }else{
+             counter[element] = 1
+        }
+    } )
+    const lista1Array = Object.entries(counter).sort((elementA,elementB) => elementA[1] - elementB[1]);
+//    return lista1Array[lista1Array.length - 1]
+  return  `El elemento que mas se repite es ${lista1Array[lista1Array.length - 1]} `
+}//calculateModa
 
 const arrayOrder = array =>{
-    
+    let orderArray = [];
+    for(let i = 0 ; i< array.length ; i++){
+        orderArray = [...orderArray , parseFloat(array[i].value)] ;
+        orderArray = [...orderArray , parseFloat(array[i].value)] ;
+    }
+    return orderArray.sort((a,b) => a - b)
+
+
 }
 const attachResultsMediana = (array) =>{
     const medianaInput = document.getElementById('medianaResult');
+    const arrayOrder_1 =  arrayOrder(array);
+    let half = halfArray(arrayOrder_1);
 
     if( isEven(array)){
-        let half = halfArray(array);
-        let mitad1 = array[half -1 ].value;
-        let mitad2 = array[half ].value;
-        console.log((`${mitad1} y ${mitad2}`).toString())
+        let mitad1 = arrayOrder_1[half -1 ].value;
+        let mitad2 = arrayOrder_1[half ].value;
+
         medianaInput.value =  (`${mitad1} y ${mitad2}`).toString();
 
     }else{
-        //el numero de enmedio
-        let mitad = halfArray(array)
-        medianaInput.value = array[mitad].value
+        medianaInput.value = arrayOrder_1[half]
 
     }//if-isEven
 }//attachResultsMediana
-
+const attachResultsModa = array =>{
+    const modaInput = document.getElementById('modaResult');
+    modaInput.value = calculateModa(array);
+}
 
 const halfArray = array =>{
     return parseInt(array.length / 2);
@@ -75,6 +98,7 @@ window.onload = () =>{
 
         doCalculate(arrayValues);
         attachResultsMediana(arrayValues);
+        attachResultsModa(arrayValues);
     });
 
 
